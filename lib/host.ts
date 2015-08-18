@@ -101,4 +101,6 @@ export class Host implements ts.CompilerHost {
 			if (sourceFile) return sourceFile.ts;
 		}
 	}
+	
+	fileExists = (fileName):boolean => { return fs.existsSync(fileName); }
 }
