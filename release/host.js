@@ -33,6 +33,7 @@ var Host = (function () {
                     return sourceFile_1.ts;
             }
         };
+        this.fileExists = function (fileName) { return fs.existsSync(fileName); };
         this.typescript = typescript;
         this.currentDirectory = currentDirectory;
         this.input = input;
